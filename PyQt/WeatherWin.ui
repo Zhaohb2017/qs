@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1113</width>
+    <height>876</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="clearBtn">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>550</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>91</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>重置数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startBtn">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>500</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重启服务器</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>791</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>服务器做牌工具</string>
+   </property>
+   <widget class="QTextEdit" name="resultText">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>361</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="weatherComboBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>本地麻将</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>本地跑胡子</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>本地跑得快</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>测试服麻将</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>测试服跑胡子</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>测试服跑得快</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_versions">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>版本</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_port">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="portComboBox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>40</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>9037</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9011</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9010</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>70</y>
+      <width>351</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_port_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>40</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>做牌json格式</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>deleteLater()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>deleteLater()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>677</x>
+     <y>531</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>556</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
